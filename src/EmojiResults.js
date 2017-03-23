@@ -5,8 +5,7 @@ class EmojiResults extends React.Component {
   render() {
     return (
       <div>
-        Welcome to EmojiResults
-        <EmojiResultRow />
+        <EmojiResultRow title="Grinning" symbol="😀" />
       </div>
     );
   }
