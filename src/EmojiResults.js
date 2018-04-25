@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import EmojiResultRow from './EmojiResultRow';
 
-class EmojiResults extends React.Component {
+class EmojiResults extends Component {
+  const {emojiData: {symbol, title }, emojiData} = this.props;
+
   render() {
     return (
       <div>
-        {this.props.emojiData.map(emojiData => {
+        {emojiData.map(emojiData => {
           return (
             <EmojiResultRow
-              key={emojiData.symbol}
-              symbol={emojiData.symbol}
-              title={emojiData.title}
+              key={symbol}
+              symbol={symbol}
+              title={title}
             />
           );
         })}
