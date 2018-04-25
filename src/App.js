@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from './Header';
 import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
 
-class App extends React.Component {
+class App extends Component {
   handleSearchChange = event => {
     console.log('search input changed to:', event.target.value);
   };
