@@ -11,8 +11,5 @@ class EmojiResultRow extends React.Component {
     );
   }
 }
-EmojiResultRow.propTypes = {
-  title: React.PropTypes.string,
-  symbol: React.PropTypes.string
-};
+
 export default EmojiResultRow;
